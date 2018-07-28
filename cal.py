@@ -21,12 +21,13 @@ class calculator():
 		result = a/b
 		return result
 
-obj1 = calculator("shashank")
-a = int(input("Enter first number"))
-b = int(input("Enter second number"))
-print(obj1.add(a,b))
-print(obj1.sub(a,b))
-print(obj1.mul(a,b))
-print(obj1.div(a,b))
+class ScientificCalculator(calculator):
+
+	def power(self, a):
+		return a*a
+
+
+def prints_something(some_string):
+	print("Inside a function outside a class"+some_string)
 
 
